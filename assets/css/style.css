@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====== Common ======= */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0px 16px;
+    line-height: 50px;
+    border-radius: 24.5px;
+    background: #171100;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ====== Header ======= */
+
+.header {
+    background: #FFFCF4;
+}
+
+.top-header {
+    position: sticky;
+    top: -28px;
+}
+
+header .body {
+    display: flex; 
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+header .navbar {
+    margin-left: auto;
+}
+
+header .navbar ul{
+    display: flex;
+    gap: 42px;
+}
+
+header .navbar ul a {
+    color: #5F5B53;
+    position: relative;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+header .navbar a:hover,
+header .navbar li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+header .navbar li.active a::after {
+    content : "";
+    position: absolute;
+    bottom: -2px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    width: 12px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+header .header-btn {
+    min-width: 144px;
+}
+
+header .action {
+    margin-left: 70px;
+}
+
+/* ====== Header ======= */
