@@ -16,6 +16,31 @@ body {
 }
 
 /* ====== Common ======= */
+.heading {
+    font-family: var(--font-heading);
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17241;
+    letter-spacing: -1.16px;
+}
+
+.heading.lv2 {  
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.desc {
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
 a {
     text-decoration: none;
 }
@@ -194,25 +219,9 @@ header .action {
     padding: 64px 0 0 130px;
 }
 
-.hero .block-content .heading {
-    font-family: var(--font-heading);
-    width: 470px;
-}
-
-.hero .block-content .heading h1 {
-    color: #171100;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17241;
-    letter-spacing: -1.16px;
-}
-
-.hero .block-content .desc {
-    margin-top: 22px;
-    color: #5F5B53;
+.hero .desc {
     font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.66667;
+    line-height: 1.67;
 }
 
 .hero .block-content .hero-btn {
@@ -255,6 +264,11 @@ header .action {
     margin-left: 14px;  
 }
 
+.hero .hero-desc {
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
 .hero .block-content .desc.stats {
     margin-top: 8px;
     margin-left: -28px;
@@ -266,4 +280,42 @@ header .action {
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.23;
+}
+
+
+/* ====== Popular ======= */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+.popular .top-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .popular-desc{
+    width: 458px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    margin-top: 16px;
+}
+.popular .controls {
+    display: flex;
+}
+.popular .chevron {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1.5px solid var(--primary-btn-color);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular .chevron:nth-child(2) {
+    background: var(--primary-btn-color);
+    margin-left: 20px;
 }
