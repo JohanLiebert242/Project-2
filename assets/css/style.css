@@ -6,6 +6,11 @@
     --primary-btn-color: #FFB900;
     --font-heading: Sen, sans-serif;
 }
+
+html
+,body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -619,7 +624,7 @@ header .action {
     margin-left: 0;
 }
 
-.blog .blog-items .img-block img {
+.blog .blog-items img {
     width: calc(100% + 2px);
     height: 250px;
     object-fit: cover;
@@ -657,7 +662,7 @@ header .action {
     border-radius: 0.5px;
 }
 
-.blog .question {
+.blog .question a {
     color: #171100;
     font-family: Poppins;
     font-size: 1.6rem;
@@ -683,4 +688,13 @@ header .action {
     justify-content: center;
     align-items: center;
     padding-top: 38px;
+}
+
+.blog .dots .dot {
+    background: #5F5B53;
+}
+
+.blog .dots .dot.active {
+    background: var(--primary-btn-color);
+    cursor: default;
 }
