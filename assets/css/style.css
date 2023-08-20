@@ -85,6 +85,15 @@ a {
     word-break: break-all;
 }
 
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+    cursor: pointer;
+    background: var(--primary-btn-color);
+}
+
 /* ====== Header ======= */
 
 .header {
@@ -479,12 +488,7 @@ header .action {
 }
 
 .feedback .dots .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
     background: #634700;
-    margin-right: 6px;
-    cursor: pointer;
 }
 
 .feedback .dots .dot.active {
@@ -580,5 +584,103 @@ header .action {
     min-width: 570px;
 }
 
+/* ====== Blog ======= */
+.blog {
+    margin-top: 200px;
+    background: #FFFCF4;
+    padding: 96px 135px;
+}
 
+.blog .intro {
+    text-align: center;
+}
 
+.blog .desc {
+    margin: 0 auto;
+    max-width: 448px;
+    margin-top: 16px;
+}
+
+.blog .blog-list {
+    padding-top: 55px;
+    display: flex;
+}
+
+.blog .blog-items {
+    flex: 1;
+    gap: 30px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    margin-left: 30px;
+}
+
+.blog .blog-items:first-child {
+    margin-left: 0;
+}
+
+.blog .blog-items .img-block img {
+    width: calc(100% + 2px);
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    margin: -1px;
+}
+
+.blog .content-block {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 20px 20px 28px;
+}
+
+.blog .info {
+    display: flex;
+    align-items: center;
+}
+
+.blog .dot {
+    margin-right: 4px;
+}
+
+.blog .date {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.blog .line {
+    max-width: 160px;
+    border: 1px solid #E2DFDA;
+    margin: 12px 0;
+    border-radius: 0.5px;
+}
+
+.blog .question {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.blog .btn {
+    margin-top: 12px;
+    background: var(--primary-btn-color);
+}
+
+.blog .btn span {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.blog .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 38px;
+}
