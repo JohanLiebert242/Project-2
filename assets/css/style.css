@@ -40,6 +40,14 @@ body {
     font-weight: 700;
 }
 
+.heading.lv3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
 .desc {
     color: #5F5B53;
     font-size: 1.6rem;
@@ -606,9 +614,16 @@ header .action {
     margin-top: 16px;
 }
 
+.blog .blog-block {
+    display: flex;
+    overflow: hidden;
+}
+
 .blog .blog-list {
     padding-top: 55px;
     display: flex;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .blog .blog-items {
@@ -625,11 +640,11 @@ header .action {
 }
 
 .blog .blog-items img {
-    width: calc(100% + 2px);
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
-    margin: -1px;
+    margin-right: -1px;
 }
 
 .blog .content-block {
@@ -662,17 +677,14 @@ header .action {
     border-radius: 0.5px;
 }
 
-.blog .question a {
+.blog .heading.lv3 a {
     color: #171100;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.75;
 }
 
 .blog .btn {
     margin-top: 12px;
     background: var(--primary-btn-color);
+    cursor: pointer;
 }
 
 .blog .btn span {
@@ -698,3 +710,87 @@ header .action {
     background: var(--primary-btn-color);
     cursor: default;
 }
+
+/* ====== Footer ======= */
+.footer {
+    padding: 96px 135px 28px;
+    background: #2E2100;
+}
+
+.footer .contact-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .intro {
+    max-width: 267px;
+}
+
+.footer .intro .desc {
+    margin: 18px 0;
+}
+
+.footer .intro .desc,
+.footer .address li,
+.footer .end-desc {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .social-icons + .social-icons {
+    margin-left: 18px;
+}
+
+
+.footer .address {
+    display: flex;
+}
+
+.footer .info-block {
+    max-width: 231px;
+    margin-left: 130px;
+}
+
+.footer .heading.lv3 a {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .info-block .line {
+    border: 1px solid #59554B;
+    min-width: 130px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+
+.footer .info-block:nth-child(3) .line {
+    max-width: 130px;
+}
+
+.footer .address li {
+    margin-top: 12px;
+}
+
+.footer .address span {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.footer .end-line {
+    margin: 38px 0 28px;
+    border: 1px solid #59554B;
+}
+
+.footer .end-desc {
+    text-align: center;
+    color: #807D74;
+}
+
